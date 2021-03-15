@@ -1,0 +1,25 @@
+version: 2
+
+macros:
+    - name: datetime_diff
+      description: >
+        A macro to calculate the difference between two columns.
+        It will do column 1 - column 2.
+        Found this specific postgresql example on stackoverflow!
+        https://stackoverflow.com/questions/1964544/timestamp-difference-in-hours-for-postgresql
+      arguments:
+        - name: column1
+          type: string
+          description: First column name.
+        - name: column2
+          type: string
+          description: Second column name.
+        - name: type
+          type: string
+          description: >
+            one of century, day, dow (day of week), doy (day of year)
+            epoch (the nominal number of seconds since 1970-01-01 00:00:00)
+            hour, isodow (The day of the week as Monday (1) to Sunday (7))
+            isoyear, microseconds, millenium, milliseconds, minute, month,
+            quarter, second, week, year, etc.
+            https://www.postgresql.org/docs/12/functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT
