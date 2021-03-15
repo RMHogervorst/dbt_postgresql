@@ -56,3 +56,22 @@ models:
                   "SE",
                   "TO",
                 ]
+
+  - name: stg_delivery_kpi
+    description: Staging view of time in minutes between several key points in the delivery chain.
+    columns:
+      - name: order_id
+        description: Order ID
+      - name: order_purchase_timestamp
+        description: timestamp of order
+      - name: complete_purchase_delivery_time_minutes
+        description: time in minutes between purchase and delivery at home.
+      - name: purchase_carrier_time_minutes
+        description: >
+          time in minutes between purchase and the time we handed the package
+          over to the delivery company.
+      - name: delivery_time_minutes
+        description: time in minutes between handing over to delivery until dropoff.
+
+  - name: stg_delivery_mismatch
+    description: Staging view of mismatch between expected and delivered time.
