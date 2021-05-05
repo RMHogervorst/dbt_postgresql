@@ -13,6 +13,7 @@ in the 'mart'.
 * run the views and tables `dbt run`
 * and generate the docs `dbt docs generate`
 * you end up with nice docs published on github pages!
+* deployed at[https://rmhogervorst.nl/dbt_postgresql](https://rmhogervorst.nl/dbt_postgresql/#!/overview)
 
 
 - - - - - - -
