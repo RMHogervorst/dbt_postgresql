@@ -6,6 +6,15 @@ in the 'mart'.
 
 ![](lineage_graph.png)
 
+
+* if you start the database container
+* start the project
+* seed the database `dbt seed`
+* run the views and tables `dbt run`
+* and generate the docs `dbt docs generate`
+* you end up with nice docs published on github pages!
+
+
 - - - - - - -
 
 Log of actions 2021-03-15
@@ -69,3 +78,26 @@ replaced existing README with this file
 docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
 ```
+
+
+## Making the docs accessable for everyone
+Also deployed the docs on github! I renamed the 'target' folder in
+dbt_project.yml
+
+```
+target-path: "docs"
+clean-targets:
+    - "docs"
+    - "dbt_modules"
+```
+This is not strictly necessary, you can deploy a website from any folder you like
+on github. But this is cool!
+
+Inside github go to settings/pages and then
+
+![](githubpages.png)
+
+activate pages, set the branch and set the folder from which to read.
+
+(I have a custom domain set up for github so it doesn't deploy to github.io/name/folder
+but to rmhogervorst.nl/projectname.)
