@@ -11,9 +11,9 @@ data-paths: ["data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-target-path: "target"
+target-path: "docs"
 clean-targets:
-    - "target"
+    - "docs"
     - "dbt_modules"
 
 models:

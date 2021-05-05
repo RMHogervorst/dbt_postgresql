@@ -1,0 +1,10 @@
+
+    
+    create table "tutorial"."dbt_tutorial"."state" (st text,state_name text)
+  ;
+    -- dbt seed --
+    
+            insert into "tutorial"."dbt_tutorial"."state" (st, state_name) values
+            (%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s)
+        
+  
