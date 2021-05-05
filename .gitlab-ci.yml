@@ -1,4 +1,9 @@
+image: alpine:latest
+
+
 pages:
+  stage: deploy
+  script: 'echo nothing to do here'
   artifacts:
     paths:
       - docs
