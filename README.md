@@ -16,6 +16,13 @@ in the 'mart'.
 * deployed at[https://rmhogervorst.nl/dbt_postgresql](https://rmhogervorst.nl/dbt_postgresql/#!/overview)
 
 
+deployed on github pages at <https://rmhogervorst.nl/dbt_postgresql>
+source: <https://github.com/RMHogervorst/dbt_postgresql>
+
+
+and gitlab pages <https://rmhogervorst.gitlab.io/dbt_postgresql>
+source: <https://gitlab.com/rmhogervorst/dbt_postgresql>
+
 - - - - - - -
 
 Log of actions 2021-03-15

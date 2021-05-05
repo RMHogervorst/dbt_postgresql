@@ -3,9 +3,10 @@ image: alpine:latest
 
 pages:
   stage: deploy
-  script: 'echo nothing to do here'
+  script:
+  - echo "nothing to do here"
   artifacts:
     paths:
       - docs
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "main"'
+  only:
+  - main
